@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <title>Card</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0px;
+    }
+    body {
+      display: flex;
+      background-color: lightblue;
+      justify-content: center;
+			align-items: center;
+			height: 100vh;
+    }
+    .card {
+      display: flex;
+      width: 600px;
+      border-radius: 80px;
+    }
+    .thumbnail {
+      width: 40%;
+    }
+		.thumbnail img {
+      width: 100%;
+    }
+    .person-info {
+      display: flex;
+    }
+    .person-name {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 40%;
+    }
+    .person-name p {
+      font-size: 12px;
+      padding-bottom: 10px;
+      font-family: sans-serif;
+    }
+    .person-name .name {
+      font-weight: bold;
+    }
+    .person-links {
+      display: flex;
+      justify-content: flex-end;
+			align-items: center;
+      width: 40%;
+    }
+		.person-links img {
+			width: 30px;
+			height: 30px;
+			background-color: blue;
+			border-radius: 50%;
+			padding: 8px;
+		}
+    .profile-picture {
+      padding: 15px;
+      width: 20%;
+    }
+    .profile-picture img {
+      width: 100%;
+      border-radius: 50%;
+    }
+    .info {
+      width: 60%;
+			background-color: white;
+			max-height: 100%;
+    }
+    .info h1 {
+      font-size: 14px;
+      font-family: sans-serif;
+      line-height: 20px;
+      margin-bottom: 10px;
+    }
+    .info .description {
+      font-size: 12px;
+      font-family: sans-serif;
+      line-height: 15px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <body>
+    <article class="card">
+      <div class="thumbnail">
+        <img src="./images/drawers.jpg" alt="drawers"/>
+      </div>
+      <div class="info">
+        <h1>
+          Shift the overall look and feel by adding these wonderful touches to
+          furniture in your home
+        </h1>
+        <p class="description">
+          Ever been in a room and felt like something was missing? Perhaps it
+          felt slightly bare and uninviting. I’ve got some simple tips to help
+          you make any room feel complete.
+        </p>
+        <div class="person-info">
+          <div class="profile-picture">
+            <img src="./images/avatar-michelle.jpg" alt="Michelle" />
+          </div>
+          <div class="person-name">
+            <p class="name">Michelle Appleton</p>
+            <p>28 Jun 2020</p>
+          </div>
+          <div class="person-links">
+            <img src="images/icon-share.svg" alt="">
+            </svg>
+          </div>
+        </div>
+      </div>
+    </article>
+  </body>
+</html>
+
+
+
